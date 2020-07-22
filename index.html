@@ -11,8 +11,11 @@
         $(function(){
         $(".flip").click(function(){
             $("#goods .container").slideToggle("slow");
-            $(".cs").toggle();
             $(".cv").toggle();
+            $(".cs").toggle();
+          });
+        $("#fee .first").click(function(){
+            $("#p1").show(100).html("代收时效 正常失效<br /> 代收账户 XXXX").delay(3000).hide(500);
           });
           });
         </script>
@@ -60,7 +63,7 @@
 	</div>
 	<div id="goods">
 		<div class="toop">
-		<span>货物信息</span>
+		    <span>货物信息</span>
 			<div class="xline"></div>
 		</div>
 		<div class="container">
@@ -71,8 +74,9 @@
 			    <p class="left">是否送货上门</p><p class="right inline_block">是</p><br />		
 			    <p class="left">是否带回单</p><p class="right inline_block">否</p>		    
 			</div>
-			<p class="flip"><span class="cv">收起<img src="1.jpg" alt=""></span><span class="cs" style="display:none;">展开<img src="1.jpg" alt=""></span></p>
+			
 		</div>
+		<p class="flip"><span class="cv">收起<img src="1.jpg" alt=""></span><span class="cs" style="display:none;">展开<img src="1.jpg" alt=""></span></p>
 	</div>
 	<div class="nav"><div class="container"></div></div>
 	<div id="fee">
@@ -81,10 +85,14 @@
 			<div class="xline"></div>
 			<div class="charge">
 				<div class="charge_left left">
-					<p>代收货款</p>
+					<p>代收货款<span class="first">  
+                <span class="number">?</span>  
+                </span></p><p id="p1" style="display:inline-block" ></p>
 					<p>运费</p>
 					<p>运货费</p>
-					<p>保险费</p>
+					<p>保险费<span class="second">  
+                <span class="number">?</span>  
+                </span></p>
 				</div>
 				<div class="charge_mid inline_block">
 					<p>现付</p>
@@ -141,28 +149,5 @@
 			<input name="text" type="submit" value="运单同步" class="input_box right">
 		</div>
 	</div>	
-</body>
-</html>
-
-<!DOCTYPE html>
-<html>
-<head>
-<script src="/jquery/jquery-1.11.1.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-  $("#show").click(function(){
-  $("p").show(100).text("如果点击“隐藏”按钮，我就会消失。").delay(3000).hide(500);
-  });
-});
-</script>
-<style>
-button{margin:30px;}
-p{margin:25px;}
-</style>
-</head>
-<body>
-<button id="show" type="button">显示</button>
-<p id="p1" style="display:inline-block" ></p>
-
 </body>
 </html>

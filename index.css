@@ -19,8 +19,8 @@ a{
 .right{
     float: right;
 }
-.cs img{width: 0.1rem;height: 0.1rem;} 
-.cv img{width: 0.1rem;height: 0.1rem;transform: rotate(180deg);} 
+.cv img{width: 0.1rem;height: 0.1rem;} 
+.cs img{width: 0.1rem;height: 0.1rem;transform: rotate(180deg);} 
 .container{
     width:3.75rem;
     font-size:.16rem;
@@ -186,38 +186,51 @@ a{
     line-height: 0.16rem;
 }
 #goods .container{
-	height: 1.85rem;
+	height: 1.3rem;
     background: #fff;
-    border-top: 0.005rem solid #DDDDDD;
-    border-bottom: 0.005rem solid #DDDDDD;
-    padding-top: 0.1rem;
+    
+  
+   
 }
-.container>span{
-	font-family: PingFangSC-Semibold;
-    font-size: 0.13rem;
-    color: #444444;
-    line-height: 0.15rem;
-    font-weight: bold;
-    padding:0 0 0.1rem 0.15rem;
-    width: 0.53rem;
-    height: 0.15rem;
+.toop{
+	border-top: 0.005rem solid #DDDDDD;
+	 width: 3.9rem;
+	height: 0.35rem;
+	 padding-top: 0.1rem;
 }
 .toop span{
+	
 	font-family: PingFangSC-Semibold;
     font-size: 0.13rem;
     color: #444444;
 	line-height: 0.15rem;
-	font-size:0.16rem;
+    font-weight: bold;
+    margin-left:0.1rem;
+    vertical-align:top;
+
+   
+}
+.toop .xline{
+    border: 0.005rem dashed #DDDDDD;
+    width: 3.45rem;
+    margin:0.1rem auto;
+    vertical-align:top;
+}
+#fee .container span{
+	
+	font-family: PingFangSC-Semibold;
+    font-size: 0.13rem;
+    color: #444444;
+	line-height: 0.15rem;
 	clear: both;
     font-weight: bold;
-    padding:0 0 0.1rem 0.15rem;
-    width: 0.53rem;
-	height: 0.15rem;
+    margin-left:0.1rem;
 }
 .xline{
     border: 0.005rem dashed #DDDDDD;
     width: 3.45rem;
     margin:0.1rem auto;
+
 }
  .container .goods_name p{
     margin:0 0.15rem;
@@ -232,7 +245,7 @@ a{
     font-size: 0.12rem;
     color: #999999;
     text-align:center;
-    margin-top: 0.40rem ;
+    border-bottom: 0.005rem solid #DDDDDD;
 }
 
 #fee .container{
@@ -246,6 +259,27 @@ a{
 #fee .container .charge{
 	width: 3.60rem;
 	height: 0.90rem;
+}
+#fee .container .first,.second{
+	border-radius: 50%; 
+	height: 0.12rem;   
+	width: 0.12rem;    
+	display: inline-block;          
+	vertical-align: middle;
+	text-align:left;
+	margin-left: 0.1rem;
+    border:0.01rem solid #108EE9;;
+
+}
+#fee .charge_left .number{
+	font-size: 0.13rem;
+    color:#108EE9;
+    line-height: 0.16rem;
+    margin-left:0.035rem;
+}
+#fee .p1{
+	position:relative;
+    right:0.5rem ;
 }
 #fee .container .charge .charge_left,.charge_mid,.charge_right{
 	width: 1rem;
