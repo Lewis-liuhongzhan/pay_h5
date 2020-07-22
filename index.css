@@ -19,6 +19,8 @@ a{
 .right{
     float: right;
 }
+.cs img{width: 0.1rem;height: 0.1rem;} 
+.cv img{width: 0.1rem;height: 0.1rem;transform: rotate(180deg);} 
 .container{
     width:3.75rem;
     font-size:.16rem;
@@ -200,6 +202,18 @@ a{
     width: 0.53rem;
     height: 0.15rem;
 }
+.toop span{
+	font-family: PingFangSC-Semibold;
+    font-size: 0.13rem;
+    color: #444444;
+	line-height: 0.15rem;
+	font-size:0.16rem;
+	clear: both;
+    font-weight: bold;
+    padding:0 0 0.1rem 0.15rem;
+    width: 0.53rem;
+	height: 0.15rem;
+}
 .xline{
     border: 0.005rem dashed #DDDDDD;
     width: 3.45rem;
@@ -211,8 +225,9 @@ a{
     font-size: 0.13rem;
     color: #666666;
     line-height: 0.12rem;
+
 }
-.heads{
+.flip{
     font-family: PingFangSC-Regular;
     font-size: 0.12rem;
     color: #999999;
