@@ -259,6 +259,7 @@ a{
 #fee .container .charge{
 	width: 3.60rem;
 	height: 0.90rem;
+	position: relative;
 }
 #fee .container .first,.second{
 	border-radius: 50%; 
@@ -275,11 +276,38 @@ a{
 	font-size: 0.13rem;
     color:#108EE9;
     line-height: 0.16rem;
-    margin-left:0.035rem;
+	margin-left:0.035rem;
+
 }
-#fee .p1{
-	position:relative;
-    right:0.5rem ;
+
+
+#fee #p1{
+	position: absolute;
+	width: 1.56rem;
+	height: 0.48rem;
+	background-color: #4FC1FD;
+	left:0.94rem;
+	top:0;
+    font-size: 12px;
+    color: #FFFFFF;
+	letter-spacing: 0;
+	line-height: 0.22rem;
+	text-align: center;
+	border-radius: 0.03rem;
+}
+#fee #p3{
+	position: absolute;
+	width: 1rem;
+	height: 0.48rem;
+	background-color: #4FC1FD;
+	left:0.94rem;
+	top:0.75rem;
+    font-size: 12px;
+    color: #FFFFFF;
+	letter-spacing: 0;
+	line-height: 0.22rem;
+	text-align: center;
+	border-radius: 0.03rem;
 }
 #fee .container .charge .charge_left,.charge_mid,.charge_right{
 	width: 1rem;
@@ -313,19 +341,21 @@ a{
 #fee .container .total{
 	background-color:#F8FCFF;
 	height: 0.40rem;
-	line-height: 0.40rem
+	line-height: 0.40rem;
 }
 #fee .container .total_text{
 	font-family: PingFangSC-Semibold;
     font-size: 0.13rem;
     color: #333333;
     font-weight: bold;
-    padding-left: 0.1rem
+	padding-left: 0.1rem;
+	padding-top: 0.1rem;
 }
 #fee .container .total_count{
 	font-family: PingFangSC-Semibold;
     font-size: 0.17rem;
-    color: #FF5005;
+	color: #FF5005;
+	
 }
 #process .container{
 	height: 3.81rem;
