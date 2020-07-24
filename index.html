@@ -20,13 +20,32 @@
 		$("#fee .second").click(function(){
             $("#p3").show(100).html("保价货物价值 <br />￥10,000.00").delay(3000).hide(500);
           });
+		  $(function(){
+			  var a=$("#r1 span").text();
+			  var b=$("#r2 span").text();
+			  var c=$("#r3 span").text();
+			  var d=$("#r4 span").text();
+			  var e=$("#r5 span").text();
+			  var f=$("#r6 span").text();
+			  var g=$("#r7 span").text();
+			//   var h=$("#r8 span").text();
+			  a=parseFloat(a);
+			  b=parseFloat(b);
+			  c=parseFloat(c);
+			  d=parseFloat(d);
+			  e=parseFloat(e);
+			  f=parseFloat(f);
+			  g=parseFloat(g);
+			//   h=parseFloat(h);
+			  var sum=a+b+c+d+f+g+e;
+			  $(".total_count").text("￥"+sum)
+			  });
           });
-        </script>
+		</script>
 </head>
 <body>   
 	<div id="header">
 		<div class="container">
-			<div class="header_nav"><img src="1.png" alt=""></div>
 			<div class="header_left left"><span><</span>运单详情</div>
 			<div class="header_right inline_block right"><img src="2.png" alt=""></div>
 			<div class="header_bottom left">
@@ -48,14 +67,14 @@
 			</div>
 			<div class="add_right inline_block right">
 				<div class="zhaoshen">
-					<span class="name">赵申</span>
+					<span class="name">刘宏展</span>
 					<span class="number">15605218720<br /></span>
 					<span class="stage">测试站点</span>
 					<span class="add">浙江省杭州市萧山区民和路传化大厦传化大厦传<br />化大厦传化大厦传化大厦传化大厦
 					</span>
 				</div>
 				<div class="lili">
-					<span class="name">赵丽丽</span>
+					<span class="name">赵铭铭</span>
 					<span class="number">13686934582<br /></span>
 					<span class="stage">测试站点</span>
 					<span class="add">上海市浦东新区世纪大道1号世纪大道1号世纪大<br />道1号世纪大道1号世纪大道1号世纪大道1号
@@ -67,9 +86,10 @@
 	<div id="goods">
 		<div class="toop">
 		    <span>货物信息</span>
-			<div class="xline"></div>
+			
 		</div>
 		<div class="container">
+			<div class="xline"></div>
 			<div class="goods_name">
 			    <p class="left">货物名称</p><p class="right inline_block">橡胶</p>	<br />	
 			    <p class="left ">包装类型及数量</p><p class="right inline_block">1桶  1袋  1膜</p><br />	
@@ -104,22 +124,22 @@
 					<p>现付</p>
 				</div>
 				<div class="charge_right inline_block right">
-					<p>￥200.00</p>
-					<p>￥200.00</p>
-					<p>￥200.00</p>
-					<p>￥200.00</p>
+					<p id="r1">￥<span>200.00</span></p>
+					<p id="r2">￥<span>200.00</span></p>
+					<p id="r3">￥<span>200.00</span></p>
+					<p id="r4">￥<span>200.00</span></p>
 				</div>
 			</div>
 			<div class="xline"></div>
 			<div class="goods_name">
-			    <p class="left">现付总金额</><p class="right inline_block">￥400.00</p>	<br />	
-			    <p class="left ">提付总金额</p><p class="right inline_block">￥400.00</p><br />	
-			    <p class="left">优惠金额</p><p class="right  wrong inline_block">-￥60.00</p><br />
+			    <p class="left">现付总金额</p><p class="right inline_block" id="r5">￥ <span>400.00</span></p>	<br />	
+			    <p class="left ">提付总金额</p><p class="right inline_block" id="r6">￥ <span>400.00</span></p><br />	
+			    <p class="left">优惠金额</p><p class="right  wrong inline_block " id="r7">￥ <span class="wrong">-60.00</span> </p><br />
 			</div>
 			<div class="xline y"></div>
 			<div class="total">
 				<span class="left total_text">实际支付金额</span>
-				<span class="right total_count inline-block">￥740.00</span>
+				<span class="right total_count"></span>
 			</div>
 		</div>
 	</div>
